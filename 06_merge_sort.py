@@ -92,23 +92,25 @@ print(nums_ord)
 from data.nomes_desord import nomes
 from time import time
 import tracemalloc
+import psutil
 
 comps = 0
 divisoes = 0
 juncoes = 0
 
 ini = time()
-tracemalloc.start()     # Inicia a medição de consumo de memória
+#tracemalloc.start()     # Inicia a medição de consumo de memória
 
 nomes_ord = merge_sort(nomes)
 
-mem_atual, mem_pico = tracemalloc.get_traced_memory()
+#mem_atual, mem_pico = tracemalloc.get_traced_memory()
 
 fim = time()
 
 print(nomes_ord)
 print(f"Tempo: {fim - ini}")
-print(f"Pico de memória: {mem_pico / 1024 / 1024}MB")
+# print(f"Pico de memória: {mem_pico / 1024 / 1024}MB")
 print(f"Comparações: {comps}, divisões: {divisoes}, junções: {juncoes}")
 
-tracemalloc.stop()      # Finaliza a medição do consumo de memória
+# tracemalloc.stop()      # Finaliza a medição do consumo de memória
+print('The CPU usage is: ', psutil.cpu_percent(4))

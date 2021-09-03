@@ -40,13 +40,13 @@ def bubble_sort(lista):
             break   # Interrompe o while
 
 
-# nums = [88, 44, 33, 0, 99, 55, 77, 22, 11, 66]
+nums = [88, 44, 33, 0, 99, 55, 77, 22, 11, 66]
 
 # Pior caso: lista em ordem inversa
 # nums = [99, 88, 77, 66, 55, 44, 33, 22, 11, 0]
 
 # Melhor caso: lista já ordenada
-nums = [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+# nums = [0, 11, 22, 33, 44, 55, 66, 77, 88, 99]
 
 bubble_sort(nums)
 
