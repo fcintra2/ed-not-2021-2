@@ -15,7 +15,7 @@
 #    RESPOSTA ~> A altura do nodo citado é 6 (seis).
 #
 # 6. A árvore representada está equilibrada? Por quê? Justifique sua resposta.
-#    RESPOSTA ~> Sim, porque a diferença de altura entre as subárvores direita e esquerda
+#    RESPOSTA ~> Não, porque a diferença de altura entre as subárvores direita e esquerda
 #                é maior que 1 (um).
 #
 # 7. Qual será o resultado do percurso pós-ordem após terem sido excluídos os nodos
